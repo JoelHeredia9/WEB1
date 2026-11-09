@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FixNow | Taller de reparación de móviles</title>
+  <meta name="description" content="Reparación de pantallas, baterías y más para tu smartphone. Diagnóstico gratuito y garantía de 12 meses.">
+  <!-- conexión correcta a styles.css -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!--Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#inicio" class="logo">FixNow</a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="mainNav" class="main-nav" aria-label="Principal">
+        <ul>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#por-que">Por qué elegirnos</a></li>
+          <li><a href="#faq">Preguntas</a></li>
+          <li><a href="#contacto" class="btn btn-small">Pedir presupuesto</a></li>
+        </ul>
+      </nav>
+      <div id="reloj" class="reloj-header">00:00:00</div>
+    </div>
+  </header>
+
+  <!-- <main> con 4 <section> -->
+  <main>
+
+    <!-- Parte inicial de la web -->
+    <section id="inicio" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>Tu móvil, listo de nuevo en menos de una hora</h1>
+          <p>Reparamos pantallas, baterías, puertos de carga y daños por agua en las principales marcas. Diagnóstico gratis y 12 meses de garantía.</p>
+          <div class="hero-actions">
+            <a href="#contacto" class="btn">Pedir presupuesto</a>
+            <a href="#servicios" class="btn btn-ghost">Ver reparaciones</a>
+          </div>
+        </div>
+        <!-- Elemento del móvil roto -->
+        <div class="hero-art">
+          <svg viewBox="0 0 240 420" role="img" aria-label="Smartphone con la pantalla agrietada y una herramienta de reparación">
+            <rect x="30" y="10" width="180" height="400" rx="28" fill="#1b2430"/>
+            <rect x="42" y="30" width="156" height="360" rx="14" fill="#2f6fed"/>
+            <rect x="92" y="16" width="56" height="8" rx="4" fill="#0f151d"/>
+            <path d="M120 30 L98 140 L150 190 L112 260 L160 390" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity=".9"/>
+            <path d="M98 140 L50 170 M150 190 L198 160 M112 260 L60 300" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" opacity=".7"/>
+            <circle cx="120" cy="370" r="10" fill="none" stroke="#fff" stroke-width="2" opacity=".6"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="section">
+      <div class="container">
+        <h2>Reparaciones que hacemos cada día</h2>
+        <p class="section-lead">Precios cerrados antes de empezar. Si no la arreglamos, no pagas.</p>
+        <div class="cards">
+          <article class="card">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M10 6l3 4-2 3 3 4"/></svg>
+            <h3>Cambio de pantalla</h3>
+            <p>Táctil y panel nuevos, con calidad original u OEM a elegir.</p>
+            <span class="price">Desde 49 €</span>
+          </article>
+          <article class="card">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="8" width="16" height="9" rx="2"/><path d="M21 11v3M7 12h4"/></svg>
+            <h3>Batería</h3>
+            <p>Recupera la autonomía del primer día. Cambio en 30 minutos.</p>
+            <span class="price">Desde 35 €</span>
+          </article>
+          <article class="card">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3v5M15 3v5M7 8h10v4a5 5 0 0 1-10 0z M12 17v4"/></svg>
+            <h3>Puerto de carga</h3>
+            <p>Limpieza o sustitución cuando el cable no hace contacto.</p>
+            <span class="price">Desde 29 €</span>
+          </article>
+          <article class="card">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z"/></svg>
+            <h3>Daños por agua</h3>
+            <p>Limpieza ultrasónica de la placa para evitar la corrosión.</p>
+            <span class="price">Desde 39 €</span>
+          </article>
+          <article class="card">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><circle cx="12" cy="13.5" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg>
+            <h3>Cámara</h3>
+            <p>Lentes rotas, enfoque borroso o cámara que no abre.</p>
+            <span class="price">Desde 45 €</span>
+          </article>
+          <article class="card">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+            <h3>Software</h3>
+            <p>Reinstalación, virus, actualizaciones atascadas y recuperación de datos.</p>
+            <span class="price">Desde 19 €</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Por qué elegirnos -->
+    <section id="por-que" class="section section-alt">
+      <div class="container why-grid">
+        <div>
+          <!-- imagen -->
+          <img class="why-img" src="https://images.unsplash.com/photo-1597740985671-2a8a3b80502e?auto=format&fit=crop&w=800&q=70" alt="Técnico reparando un smartphone con herramientas de precisión" loading="lazy" width="800" height="560">
+          <ul class="points">
+            <li><strong>Diagnóstico gratuito</strong> y sin compromiso.</li>
+            <li><strong>Garantía de 12 meses</strong> en piezas y mano de obra.</li>
+            <li><strong>Reparación en el acto</strong> para la mayoría de modelos.</li>
+          </ul>
+        </div>
+        <div id="faq">
+          <h2>Preguntas frecuentes</h2>
+          <div class="accordion">
+            <div class="acc-item">
+              <h3><button class="acc-btn" aria-expanded="false" aria-controls="faq1" id="btn1">¿Cuánto tarda una reparación?<span class="acc-icon" aria-hidden="true"></span></button></h3>
+              <div class="acc-panel" id="faq1" role="region" aria-labelledby="btn1" hidden><p>Pantallas y baterías, entre 30 y 60 minutos. Daños por agua o placa, de 24 a 72 horas.</p></div>
+            </div>
+            <div class="acc-item">
+              <h3><button class="acc-btn" aria-expanded="false" aria-controls="faq2" id="btn2">¿Perderé mis datos?<span class="acc-icon" aria-hidden="true"></span></button></h3>
+              <div class="acc-panel" id="faq2" role="region" aria-labelledby="btn2" hidden><p>No. Las reparaciones de pantalla o batería no tocan tus datos. Aun así, te recomendamos una copia de seguridad antes de venir.</p></div>
+            </div>
+            <div class="acc-item">
+              <h3><button class="acc-btn" aria-expanded="false" aria-controls="faq3" id="btn3">¿Y si no se puede reparar?<span class="acc-icon" aria-hidden="true"></span></button></h3>
+              <div class="acc-panel" id="faq3" role="region" aria-labelledby="btn3" hidden><p>Solo pagas si la reparación se completa. El diagnóstico siempre es gratis.</p></div>
+            </div>
+            <div class="acc-item">
+              <h3><button class="acc-btn" aria-expanded="false" aria-controls="faq4" id="btn4">¿Qué marcas reparáis?<span class="acc-icon" aria-hidden="true"></span></button></h3>
+              <div class="acc-panel" id="faq4" role="region" aria-labelledby="btn4" hidden><p>Apple, Samsung, Xiaomi, Huawei, Oppo, Motorola y la mayoría de marcas del mercado.</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="section">
+      <div class="container contact-grid">
+        <div>
+          <h2>Cuéntanos qué le pasa a tu móvil</h2>
+          <p class="section-lead">Te respondemos con un presupuesto en menos de 2 horas laborables.</p>
+        </div>
+        <form id="contactForm" class="form" novalidate>
+          <div class="field">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" autocomplete="name" aria-describedby="error-nombre">
+            <!-- REQ 3: los errores se escriben aquí desde JS (nunca alert()) -->
+            <p class="error" id="error-nombre" role="alert"></p>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" aria-describedby="error-email">
+            <p class="error" id="error-email" role="alert"></p>
+          </div>
+          <div class="field">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="4" aria-describedby="error-mensaje"></textarea>
+            <p class="error" id="error-mensaje" role="alert"></p>
+          </div>
+          <button type="submit" class="btn">Enviar consulta</button>
+          <!-- REQ 3: mensaje de éxito dinámico -->
+          <p class="success" id="formSuccess" role="status"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 FixNow. Todos los derechos reservados.</p>
+      <p>Lunes a viernes de 9:30 a 20:00 · Sábados de 10:00 a 14:00</p>
+    </div>
+  </footer>
+
+  <!-- Conexión correcta a script.js -->
+  <script src="script.js"></script>
+</body>
+</html>
